@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
 import Feed from './components/Feed';
 import Header from './components/Header';
@@ -8,9 +8,10 @@ import Sidebar from './components/Sidebar';
 import './App.css';
 import { auth } from './firebase';
 import Widgets from './components/Widgets';
+
 function App() {
   const user = useSelector(selectUser);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     auth.onAuthStateChanged((userAuth) => {
