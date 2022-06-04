@@ -2,8 +2,6 @@
 
 Linkedin Clone using React and Redux.
 
-Linkedin clone app : 'https://linkedin-clone-95986.web.app/'
-
 ## Functionality
 
 - Login to linkedin by email
